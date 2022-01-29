@@ -1,0 +1,31 @@
+{
+  "name": "cs648-1",
+  "version": "1.0.0",
+  "description": "Assignment 1 for CS48.02",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w server server/server.js",
+    "compile": "babel src --presets @babel/react --out-dir public",
+    "watch": "babel src --presets @babel/react --out-dir public --watch --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canorga8634/CS648-1.git"
+  },
+  "author": "Chris Anorga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canorga8634/CS648-1/issues"
+  },
+  "homepage": "https://github.com/canorga8634/CS648-1#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-react": "^7.16.7"
+  }
+}

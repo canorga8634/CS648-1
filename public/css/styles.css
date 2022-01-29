@@ -1,0 +1,59 @@
+/* Generic Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    width: 900px;
+    height: 101vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(195,200,219,1) 50%, rgba(255,255,255,1) 100%);
+    padding: 10px;
+}
+
+/* app */
+.app {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    ". head ."
+    ". img ."
+    ". cont .";
+}
+#header {
+    grid-area: head;
+    justify-self: center;
+}
+#content {
+    grid-area: cont;
+    padding-top: 10px;
+}
+p {
+    text-align: center;
+}
+
+/* image */
+img {
+    height: 250px;
+    width: 250px;
+    grid-area: img;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+/* button */
+button {
+    padding:25px;
+    margin-top:20px;
+    border-style: none;
+    font-size: 1em;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+button:hover
+{
+    background-color: #a4aec2;
+}
+button
+{
+    outline:none;
+}
